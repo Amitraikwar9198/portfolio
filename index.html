@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amit Raikwar - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scroll-indicator"></div>
+
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="logo">Amit Raikwar</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-nav" id="mobileNav">
+        <ul>
+          <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+          <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+          <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-image-container">
+          <div class="hero-image">
+            <div class="profile-avatar">
+              <img
+                src="./Images/Amit portfolio image.jpg"
+                alt="portfolio image"
+              />
+            </div>
+            <div class="floating-elements"></div>
+          </div>
+          <div class="tech-icons">
+            <div class="tech-icon">⚛️</div>
+            <div class="tech-icon">☕</div>
+            <div class="tech-icon">🐍</div>
+            <div class="tech-icon">🗄️</div>
+            <div class="tech-icon">🎨</div>
+            <div class="tech-icon">⚡</div>
+          </div>
+        </div>
+        <div class="hero-text">
+          <h1>Hi, I'm Amit Raikwar</h1>
+          <p class="subtitle">
+            Frontend Developer | Java Programmer | Tech Explorer
+          </p>
+          <p>
+            Welcome to my portfolio! I'm a Computer Science student from Sage
+            University, Indore, passionate about turning ideas into real,
+            functional, and visually appealing web applications. I love building
+            things — from responsive websites to backend systems — using
+            technologies like HTML, CSS, JavaScript, Java, and MongoDB
+          </p>
+
+          <div class="resume-section">
+            <p class="resume-text">
+              Ready to see my work? Download my resume to learn more about my
+              experience and skills.
+            </p>
+            <button
+              class="cta-button floating"
+              id="downloadBtn"
+              onclick="downloadResume()"
+            >
+              📄 Download Resume
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Hello! I’m Amit Raikwar, a passionate and hardworking Computer
+            Science student at Sage University, Indore, currently in 2025. I
+            specialize in Frontend Development, love solving coding challenges,
+            and enjoy building responsive, user-friendly web applications.
+            <br />
+
+            With a strong foundation in Java, MongoDB, and modern web
+            technologies, I aim to create impactful digital solutions that
+            combine creativity with functionality
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <h4>🎓 Education</h4>
+            <p>B.Tech in Computer Science & Technology</p>
+          </div>
+          <div class="stat-item">
+            <h4>💡 Current Focus</h4>
+            <p>Python | MongoDB | Frontend Development | Java</p>
+          </div>
+          <div class="stat-item">
+            <h4>🌍 Based In</h4>
+            <p>Jhansi, Uttar Pradesh</p>
+          </div>
+          <div class="stat-item">
+            <h4>🎯 Goal</h4>
+            <p>
+              To grow as a Software Engineer and contribute to innovative tech
+              solutions
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2 class="section-title">Skills</h2>
+      <p style="text-align: center; margin-bottom: 3rem; color: #666">
+        Over the years of learning and building projects, I’ve developed a
+        strong foundation in both frontend and backend technologies
+      </p>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">UI/UX Design Basics</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Backend & DB</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">MySQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Figma</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title">Projects</h2>
+      <p style="text-align: center; margin-bottom: 3rem; color: #666">
+        Here are some projects I'm proud of
+      </p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <span class="project-emoji"></span>
+          <h3>📸Image Search Engine</h3>
+          <p>
+             smart image search application that enables users to find images either by entering keywords or uploading a sample image. The system uses artificial intelligence and image processing to deliver accurate and relevant visual results. Includes features like reverse image search, filtering, and a clean, responsive interface.
+          </p>
+          <button >
+            <a href="https://amitraikwar9198.github.io/Search_Image/"
+              >visiting!</a
+            >
+          </button>
+        </div>
+        <div class="project-card">
+          <span class="project-emoji"></span>
+          <h3>🛒 Grocery Store Management System </h3>
+          <p>
+           A user-friendly web application designed to manage grocery store operations, including product listings, inventory tracking, billing, and customer orders. It allows admins to add/edit items and users to browse and purchase groceries online. Features include a shopping cart, order summary, and secure checkout.
+          </p>
+
+          <button>
+            <a href="https://amitraikwar9198.github.io/grocery/"
+              >visiting!</a
+            >
+          </button>
+        </div>
+        <div class="project-card">
+          <span class="project-emoji"></span>
+          <h3>📚 Library Management System (Flask)</h3>
+          <p>
+            A web-based application that helps manage library operations such as book issuance, returns, student records, and inventory management. It allows students to log in, view their issued books, and check availability, while the admin can manage books, users, and track borrowing history efficiently.
+          </p>
+          <button>
+            <a href="https://amitraikwar9198.github.io/Search_Image/"
+              >visiting!</a
+            >
+          </button>
+        </div>
+        <!-- <div class="project-card">
+          <span class="project-emoji">🎵</span>
+          <h3>Music Player App</h3>
+          <p>
+            A full-featured JavaScript music player with song title, artist
+            info, playlist toggle, and animated UI. Includes autoplay and smooth
+            controls.
+          </p>
+          <button>
+            <a href="https://amitraikwar9198.github.io/Search_Image/"
+              >visiting!</a
+            >
+          </button>
+        </div>
+        <div class="project-card">
+          <span class="project-emoji">📸</span>
+          <h3>Image Gallery Website</h3>
+          <p>
+            A responsive and filterable image gallery with hover effects,
+            lightbox view, and smooth transitions — built using HTML, CSS, and
+            JavaScript.
+          </p>
+
+          <button>
+            <a href="https://amitraikwar9198.github.io/Search_Image/"
+              >visiting!</a
+            >
+          </button>
+        </div>
+        <div class="project-card">
+          <span class="project-emoji">📚</span>
+          <h3>Library Management System</h3>
+          <p>
+            A Python Flask application for students to log in and track their
+            issued books. Secure, role-based access with real-time data
+            rendering.
+          </p>
+          <button>
+            <a href="https://amitraikwar9198.github.io/Search_Image/"
+              >visiting!</a
+            >
+          </button>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="img-gallery">
+        <h2 class="section-title">📸 My Gallery</h2>
+
+        <div class="upload-box">
+          <input type="file" id="upload" accept="image/*" multiple />
+          <label for="upload">➕ Upload New Images</label>
+        </div>
+
+        <div class="gallery-container" id="galleryContainer">
+          <!-- 4 Preloaded Images -->
+          <div
+            class="image-box"
+            onclick="showOverlay('.jpg', 'No image view', 'No image Description')"
+          >
+            <img src=".jpg" alt="No image viewt" />
+            <div class="img-overlay">No image view</div>
+          </div>
+          <div
+            class="image-box"
+            onclick="showOverlay('.jpg', 'No image view', 'No image Description')"
+          >
+            <img src=".jpg" alt="No image view" />
+            <div class="img-overlay">No image view</div>
+          </div>
+          <div
+            class="image-box"
+            onclick="showOverlay('.jpg', 'No image view', 'No image Description.')"
+          >
+            <img src=".jpg" alt="City Lights" />
+            <div class="img-overlay">No image view</div>
+          </div>
+          <div
+            class="image-box"
+            onclick="showOverlay(' .jpg', 'No image view', 'No image Description.')"
+          >
+            <img src=".jpg" alt="No image view" />
+            <div class="img-overlay">No image view</div>
+          </div>
+        </div>
+
+        <!-- Image Overlay -->
+        <div class="overlay" id="overlay">
+          <span class="close-btn" onclick="closeOverlay()">×</span>
+          <img id="overlayImage" src="" alt="" />
+          <div class="image-details">
+            <h3 id="imageTitle">Image Title</h3>
+            <p id="imageDescription">Image Description</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Thank you for visiting my portfolio!</h3>
+          <br />
+          <p>
+            I’m always excited to connect with new people — whether it’s for a
+            project, job opportunity, collaboration, or just a friendly tech
+            chat
+          </p>
+          <div class="contact-links">
+            <a
+              href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+              class="contact-link"
+            >
+              <span>📧</span>
+              <span>amitraikwar993613@gmail.com</span>
+            </a>
+            <a href="https://linkedin.com/in/amitraikwar" class="contact-link">
+              <span>💼</span>
+              <span>linkedin.com/in/amitraikwar</span>
+            </a>
+            <a href="https://github.com/amitraikwar" class="contact-link">
+              <span>💻</span>
+              <span>github.com/amitraikwar</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>Send me a message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your.email@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Your message here..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Amit Raikwar</p>
+      <div class="foot">
+        <p>📧 Email: amitraikwar993613@gmail.com</p>
+        <p>🌍 Location: Jhansi, Uttar Pradesh, India</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
