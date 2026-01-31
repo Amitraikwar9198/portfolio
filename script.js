@@ -28,7 +28,7 @@ function downloadResume() {
 
     setTimeout(() => {
         const a = document.createElement('a');
-        a.href = 'resume.pdf'; // Ensure this file exists in your project
+        a.href = 'Resume.pdf'; // Ensure this file exists in your project
         a.download = 'Amit_Raikwar_Resume.pdf';
         document.body.appendChild(a);
         a.click();
